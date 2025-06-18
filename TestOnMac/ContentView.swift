@@ -1,45 +1,30 @@
 import SwiftUI
 
-struct Task: Identifiable {
-    let id = UUID()
-    let name: String
-}
-
 struct ContentView: View {
-    @State private var tasks: [Task] = []
-    @State private var newTaskName = ""
+    @StateObject private var viewModel = TaskViewModel()
 
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
-                    TextField("Enter a new task", text: $newTaskName)
+                    TextField("Enter a new task", text: $viewModel.newTaskName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                    Button(action: addTask) {
+
+                    Button(action: viewModel.addTask) {
                         Image(systemName: "plus")
                     }
-                    .disabled(newTaskName.isEmpty)
+                    .disabled(viewModel.newTaskName.isEmpty)
                 }
                 .padding()
 
                 List {
-                    ForEach(tasks) { task in
+                    ForEach(viewModel.tasks) { task in
                         Text(task.name)
                     }
-                    .onDelete(perform: deleteTask)
+                    .onDelete(perform: viewModel.deleteTask)
                 }
             }
             .navigationTitle("To-Do List")
         }
-    }
-
-    func addTask() {
-        let task = Task(name: newTaskName)
-        tasks.append(task)
-        newTaskName = ""
-    }
-
-    func deleteTask(at offsets: IndexSet) {
-        tasks.remove(atOffsets: offsets)
     }
 }

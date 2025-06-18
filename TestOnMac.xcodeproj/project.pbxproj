@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D378D732E0357980014DB12 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D378D722E0357980014DB12 /* Task.swift */; };
+		3D378D752E0357B10014DB12 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D378D742E0357B10014DB12 /* TaskViewModel.swift */; };
 		3D9AA9322E034C0900F28F7C /* TestOnMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9AA9312E034C0900F28F7C /* TestOnMacApp.swift */; };
 		3D9AA9342E034C0900F28F7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9AA9332E034C0900F28F7C /* ContentView.swift */; };
 		3D9AA9362E034C0A00F28F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9AA9352E034C0A00F28F7C /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D378D722E0357980014DB12 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3D378D742E0357B10014DB12 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		3D9AA92E2E034C0900F28F7C /* TestOnMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOnMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9AA9312E034C0900F28F7C /* TestOnMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOnMacApp.swift; sourceTree = "<group>"; };
 		3D9AA9332E034C0900F28F7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 			children = (
 				3D9AA9312E034C0900F28F7C /* TestOnMacApp.swift */,
 				3D9AA9332E034C0900F28F7C /* ContentView.swift */,
+				3D378D742E0357B10014DB12 /* TaskViewModel.swift */,
+				3D378D722E0357980014DB12 /* Task.swift */,
 				3D9AA9352E034C0A00F28F7C /* Assets.xcassets */,
 				3D9AA9372E034C0A00F28F7C /* TestOnMac.entitlements */,
 				3D9AA9382E034C0A00F28F7C /* Preview Content */,
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9AA9342E034C0900F28F7C /* ContentView.swift in Sources */,
+				3D378D752E0357B10014DB12 /* TaskViewModel.swift in Sources */,
+				3D378D732E0357980014DB12 /* Task.swift in Sources */,
 				3D9AA9322E034C0900F28F7C /* TestOnMacApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
